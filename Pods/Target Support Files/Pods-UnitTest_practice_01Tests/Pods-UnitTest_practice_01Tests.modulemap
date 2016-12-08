@@ -1,0 +1,6 @@
+framework module Pods_UnitTest_practice_01Tests {
+  umbrella header "Pods-UnitTest_practice_01Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
