@@ -33,4 +33,13 @@ class UnitTest_practice_01UITests: XCTestCase {
         // Use XCTAssert and related functions to verify your tests produce the correct results.
     }
     
+    
+    func testShowAlert() {
+        
+        let app = XCUIApplication()
+        app.buttons["Button"].tap()
+        app.alerts["確認"].collectionViews.buttons["OK"].tap()
+        //
+    }
+    
 }

@@ -33,4 +33,17 @@ class UnitTest_practice_01Tests: XCTestCase {
         }
     }
     
+    // added
+    
+    func testShowWeather() {
+        class VCMock:ViewController {
+            override func getWeather(closure:(String) -> Void) {
+                closure("test weather")
+            }
+        }
+        
+        let vcm:VCMock = VCMock()
+            vcm.showWeather()
+    }
+    
 }
